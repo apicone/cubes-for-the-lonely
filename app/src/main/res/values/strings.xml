@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cubes for the Lonely</string>
+    <string name="ones_score">0</string>
+    <string name="twos_score">0</string>
+    <string name="threes_score">0</string>
+    <string name="fours_score">0</string>
+    <string name="fives_score">0</string>
+    <string name="sixes_score">0</string>
+    <string name="upper_bonus_score">0</string>
+    <string name="upper_score">0</string>
+    <string name="three_kind_score">0</string>
+    <string name="four_kind_score">0</string>
+    <string name="full_house_score">0</string>
+    <string name="small_straight_score">0</string>
+    <string name="large_straight_score">0</string>
+    <string name="five_kind_score">0</string>
+    <string name="chance_score">0</string>
+    <string name="lower_score">0</string>
+    <string name="color_button">Change Color</string>
+    <string name="choose_color">Choose a color:</string>
+</resources>

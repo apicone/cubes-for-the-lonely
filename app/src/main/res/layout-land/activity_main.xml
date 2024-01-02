@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zybooks.cubesforthelonely.MainActivity">
+
+    <GridLayout
+        android:id="@+id/full_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginEnd="32dp"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:useDefaultMargins="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:id="@+id/score_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:columnCount="2"
+            android:rowCount="8"
+            android:useDefaultMargins="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Ones" />
+
+            <Button
+                android:id="@+id/onesText"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/ones_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Twos" />
+
+            <Button
+                android:id="@+id/twosText"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/twos_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Threes" />
+
+            <Button
+                android:id="@+id/threesText"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/threes_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Fours" />
+
+            <Button
+                android:id="@+id/foursText"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/fours_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Fives" />
+
+            <Button
+                android:id="@+id/fivesText"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/fives_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Sixes" />
+
+            <Button
+                android:id="@+id/sixesText"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/sixes_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Bonus (if over 62)" />
+
+            <TextView
+                android:id="@+id/upperBonusText"
+                style="@style/TotalScoreLabel"
+                android:fontFamily="@font/architects_daughter"
+                android:text="@string/upper_bonus_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Upper Total" />
+
+            <TextView
+                android:id="@+id/upperScore"
+                style="@style/TotalScoreLabel"
+                android:fontFamily="@font/architects_daughter"
+                android:text="@string/upper_score" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/lower_score_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:columnCount="2"
+            android:rowCount="16"
+            android:useDefaultMargins="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="3 of a Kind" />
+
+            <Button
+                android:id="@+id/threeKindScore"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/three_kind_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="4 of a Kind" />
+
+            <Button
+                android:id="@+id/fourKindScore"
+                style="@style/ScoreButton"
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="onScoreClick"
+                android:text="@string/four_kind_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="5 of a Kind" />
+
+            <Button
+                android:id="@+id/fiveKindScore"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/five_kind_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Full House" />
+
+            <Button
+                android:id="@+id/fullHouseScore"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/full_house_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Small Straight" />
+
+            <Button
+                android:id="@+id/smallStraightScore"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/small_straight_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Large Straight" />
+
+            <Button
+                android:id="@+id/largeStraightScore"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/large_straight_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Chance" />
+
+            <Button
+                android:id="@+id/chanceScore"
+                style="@style/ScoreButton"
+                android:onClick="onScoreClick"
+                android:text="@string/chance_score" />
+
+            <TextView
+                style="@style/NumberLabel"
+                android:text="Lower Total" />
+
+            <TextView
+                android:id="@+id/lowerScore"
+                style="@style/TotalScoreLabel"
+                android:fontFamily="@font/architects_daughter"
+                android:text="@string/lower_score" />
+        </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/dice_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:columnCount="1"
+                android:rowCount="7"
+                android:useDefaultMargins="true"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.40"
+                app:layout_constraintLeft_toRightOf="@id/score_grid"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/rollCountView"
+                    style="@style/NumberLabel"
+                    android:text="Rolls Left: 3" />
+
+
+                <Button
+                    android:id="@+id/rollButton"
+                    style="@style/RollButton"
+                    android:onClick="onRollClick"
+                    android:text="Roll" />
+
+                <ImageView
+                    android:id="@+id/die1"
+                    style="@style/DieView"
+                    android:onClick="onDieClick"
+                    android:src="@drawable/dice_1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/die2"
+                    style="@style/DieView"
+                    android:onClick="onDieClick"
+                    android:src="@drawable/dice_1"
+                    app:layout_constraintLeft_toLeftOf="@id/die1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/die3"
+                    style="@style/DieView"
+                    android:onClick="onDieClick"
+                    android:src="@drawable/dice_1"
+                    app:layout_constraintLeft_toLeftOf="@id/die2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/die4"
+                    style="@style/DieView"
+                    android:onClick="onDieClick"
+                    android:src="@drawable/dice_1"
+                    app:layout_constraintLeft_toLeftOf="@id/die3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/die5"
+                    style="@style/DieView"
+                    android:onClick="onDieClick"
+                    android:src="@drawable/dice_1"
+                    app:layout_constraintLeft_toLeftOf="@id/die4"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </GridLayout>
+    </GridLayout>
+
+</LinearLayout>
